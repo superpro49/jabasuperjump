@@ -2095,7 +2095,7 @@
             this.highScore = ['10', '11', ''].concat(highScoreStr.split(''));
 			// Submit highscore to Telegram
 var xmlhttp = new XMLHttpRequest();
-var url = "https://jabasuperjump.herokuapp.com/highscore/" + distance  +
+var url = "https://trexgame.herokuapp.com/highscore/" + distance  +
 "?id=" + playerid;
 xmlhttp.open("GET", url, true);
 xmlhttp.send();
