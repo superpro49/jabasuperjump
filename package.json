@@ -1,0 +1,18 @@
+{
+  "name": "nuoma",
+  "version": "0.0.1",
+  "description": "this is game about one man who want to be a captain",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+	
+	"start": "node index.js"
+	
+  },
+  "author": "anatoly",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "node-telegram-bot-api": "^0.30.0"
+  }
+}
