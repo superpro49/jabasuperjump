@@ -8,7 +8,7 @@ const TOKEN = "607223777:AAEz8mJFpZtuquRFCYmc-SbtyXwKqtWX1lU";
 const server = express();
 const bot = new TelegramBot(TOKEN, { polling: true } );
 const port = process.env.PORT || 5000;
-const gameName = "JabaSJ";
+const gameName = "game1";
 const queries = {};
 
 server.use(express.static(path.join(__dirname, 'public')));
