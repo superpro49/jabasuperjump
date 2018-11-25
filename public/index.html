@@ -34,7 +34,7 @@
 <script>
     document.onkeydown = function(evt) {
     evt = evt || window.event;
-    if (evt.Touch) {
+    if (evt.keycode == 32) {
         var box = document.getElementById("messageBox");
         box.style.visibility="hidden";
     }
