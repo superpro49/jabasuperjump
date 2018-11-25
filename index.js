@@ -13,7 +13,7 @@ const queries = {};
 
 server.use(express.static(path.join(__dirname, 'public')));
 
-bot.onText(/help/, (msg) => bot.sendMessage(msg.from.id, "This bot implements a T-Rex jumping game. Say /game if you want to play."));
+bot.onText(/help/, (msg) => bot.sendMessage(msg.from.id, "Пиши /game или иди нахyй."));
 
 bot.onText(/start|game/, (msg) => bot.sendGame(msg.from.id, gameName));
 
@@ -22,7 +22,7 @@ bot.on("callback_query", function (query) {
     bot.answerCallbackQuery(query.id, "Sorry, '" + query.game_short_name + "' is not available.");
   } else {
     queries[query.id] = query;
-    let gameurl = "https://trexgame.herokuapp.com/index.html?id="+query.id;
+    let gameurl = "https://superpro49.github.io/jaba/JabaGame/index.html?id="+query.id;
     bot.answerCallbackQuery({
       callback_query_id: query.id,
       url: gameurl
